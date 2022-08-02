@@ -13,7 +13,7 @@
  <th>Greedy Text(Time taken)</th>
  </tr>
 <tr>
- <td><img src="Images and Gifs.gif" width="320px"/></td>
+ <td><img src="Images and Gifs.gif/-_hbPLsZvvo_43_55.gif" width="320px"/></td>
  <td>a woman is seasoning some food(22.05s)</td>
  </tr>
  <tr>
