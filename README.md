@@ -33,10 +33,10 @@
  </tr>
  <tr>
  <td><img src="Images and gifs/Wv3u2q3oGeU_35_45.gif" width="320px"/></td>
- <td>a man playing piano(0.75)</td>
+ <td>a man playing piano(0.75s)</td>
  </tr>
  <tr>
  <td><img src="Images and gifs/hJFBXHtxKIc_310_315.gif" width="320px"/></td>
- <td>a man is eating spaghetti(0.76)</td>
+ <td>a man is eating spaghetti(0.76s)</td>
  </tr>
  </table>
