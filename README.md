@@ -1,55 +1,30 @@
 # Video_Captioning_TensorFlow_MSVD
 
-<h2 id="Features">Features</h2>
-<ul>
- <li> Realtime implementation</li>
- <li> Two types of search algorithms depending upon the requirements</li>
- <li> Beam search and Greedy search</li>
- </ul>
-<h3 id="Performance">Performance of both algorithms on testing data</h3>
+<h2 id="Testing">Testing</h2>
+<h3 id="Performance">Performance of greedy algorithms on testing data</h3>
 <table>
  <tr>
   <th>Video</th>
  <th>Greedy Text(Time taken)</th>
  </tr>
 <tr>
- <td><img src="Images and Gifs.gif/-_hbPLsZvvo_43_55.gif" width="320px"/></td>
- <td>a woman is seasoning some food(22.05s)</td>
+ <td><img src="Images and gifs.gif/-_hbPLsZvvo_43_55.gif" width="320px"/></td>
+ <td>a woman is slicing a carrot(0.72)</td>
  </tr>
  <tr>
- <td><img src="images/7NNg0_n-bS8_21_30.gif" width="320px"/></td>
- <td>a man is singing (13.79s)</td>
+ <td><img src="Images and gifs/0hyZ__3YhZc_289_295.gif" width="320px"/></td>
+ <td>a man is cooking the kitchen(0.80)</td>
  </tr>
  <tr>
- <td><img src="images/shPymuahrsc_5_12.gif" width="320px"/></td>
- <td>the animal is sitting on the ground (21.16s)</td>
+ <td><img src="Images and gifs/Ffv7fhL1EDY_177_184.gif" width="320px"/></td>
+ <td>a man is playing with a ball(0.70)</td>
  </tr>
  <tr>
- <td><img src="images/k5OKBX2e7xA_19_32.gif" width="320px"/></td>
- <td>a man is riding a bicycle (22.20s)</td>
+ <td><img src="Images and gifs/bDoCQEwghZU_201_211.gif" width="320px"/></td>
+ <td>a man is making a food(0.73)</td>
  </tr>
  <tr>
- <td><img src="images/Je3V7U5Ctj4_569_576.gif" width="320px"/></td>
- <td>a man is spreading a tortilla (25.65s)</td>
- </tr>
-<tr>
- <td><img src="images/0lh_UWF9ZP4_62_69.gif" width="320px"/></td>
- <td>a woman is mixing some food (35.91s)</td>
- </tr>
- <tr>
- <td><img src="images/5HAf_INrFy0_3_25.gif" width="320px"/></td>
- <td>a dog is dancing (15.58s)</td>
- </tr>
-  <tr>
- <td><img src="images/J_evFB7RIKA_104_120.gif" width="320px"/></td>
- <td>a person is cutting a pineapple (24.31s) </td>
- </tr>
- <tr>
- <td><img src="images/TZ860P4iTaM_15_28.gif" width="320px"/></td>
- <td>a cat is playing the piano (26.48s) </td>
- </tr>
- <tr>
- <td><img src="images/ezgif-4-989de822710c.gif" width="320px"/></td>
- <td>a man is mixing ingredients in a bowl (38.16s) </td>
+ <td><img src="Images and gifs/tn1d5DmdMqY_15_28.gif" width="320px"/></td>
+ <td>a man is playing a guitar(0.73)</td>
  </tr>
  </table>
