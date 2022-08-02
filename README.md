@@ -8,7 +8,7 @@
  <th>Greedy Text(Time taken)</th>
  </tr>
 <tr>
- <td><img src="Images and gifs.gif/-_hbPLsZvvo_43_55.gif" width="320px"/></td>
+ <td><img src="Images and gifs/-_hbPLsZvvo_43_55.gif" width="320px"/></td>
  <td>a woman is slicing a carrot(0.72)</td>
  </tr>
  <tr>
