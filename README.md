@@ -32,6 +32,7 @@ The Microsoft Research Video Description Corpus (MSVD) dataset consists of about
 ## Video Feature Extraction
 
 First, the videos in .avi format are converted into 80 image frames. The Convolutional Neural Network (CNN) method is used for feature extraction. The VGG16 model is a series of convolutional layers followed by a few dense (or fully connected) layers. The input layer to the last max pooling layer (labeled by 7 × 7 × 512) is regarded as the feature extraction part of the model, while the rest of the network is regarded as the classification part of the model. Each of the 80 frames is passed through a pre-trained VGG16, and 4,096 features are extracted from each frame. These features are stacked to form an (80, 4096) shaped array, where 80 is the number of frames and 4,096 is the number of extracted features from each frame.
+<p align="center"><img align="center" src="Images and gifs/vgg16.jpg" /></p>
 
 ## Caption Analysis
 
@@ -39,7 +40,7 @@ Since the caption data was completely raw, the data had a lot of spelling errors
 
 After loading the training caption data, some analysis is performed on the captions, including the visualization of the frequency distribution of the words—the most common 50 words and the least common 50 words.
 
-<p align="center"><img align="center" src="Images/ana.png" /></p>
+<p align="center"><img align="center" src="Images and gifs/caption_analysis" /></p>
 
 ## Prepare Captions
 
@@ -69,7 +70,7 @@ The decoder generates captions word by word using LSTMs, which are able to seque
 
 It receives combined input from the encoder LSTM and decoder inputs (Input Layer 2). The decoder LSTM is connected to a Dense layer with Softmax activation function.
 
-<p align="center"><img align="center" src="Images/model.png" /></p>
+<p align="center"><img align="center" src="<p align="center"><img align="center" src="Images and gifs/model_train" /></p>" /></p>
 
 ## Training the Model
 
@@ -80,10 +81,12 @@ Deep learning neural networks are trained using the stochastic gradient descent 
 ### Loss
 
 Cross Entropy Loss is the most popular and effective measurement for the performance of a classification model whose output is a probability value between 0 and 1. Categorical cross-entropy is applied in multiclass classification scenarios. In the formula, we multiply the actual outcome with the logarithm of the outcome produced by the model for more than two classes and then sum up. The categorical cross-entropy is appropriate in combination with an activation function such as softmax that can produce several probabilities for the number of classes that sum up to 1.
+<p align="center"><img align="center" src="Images and gifs/loss" /></p>
 
 ### Accuracy
 
-Finally, because it is a classification problem, the classification accuracy is collected and reported, defined via the metrics argument. Final accuracy: 0.77
+Finally, because it is a classification problem, the classification accuracy is collected and reported, defined via the metrics argument. 
+<p align="center"><img align="center" src="Images and gifs/accuracy" /></p>
 
 ## Model for Inference
 
