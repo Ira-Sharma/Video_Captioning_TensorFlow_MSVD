@@ -78,7 +78,7 @@ Deep learning neural networks are trained using the stochastic gradient descent 
 ### Loss
 
 Cross Entropy Loss is the most popular and effective measurement for the performance of a classification model whose output is a probability value between 0 and 1. Categorical cross-entropy is applied in multiclass classification scenarios. In the formula, we multiply the actual outcome with the logarithm of the outcome produced by the model for more than two classes and then sum up. The categorical cross-entropy is appropriate in combination with an activation function such as softmax that can produce several probabilities for the number of classes that sum up to 1.
-<p align="center"><img align="center" src="Images and gifs/loss.png" /></p>
+<p align="center"><img align="center" src="Images and gifs/loss.png" width="500" height="300" /></p>
 
 ### Accuracy
 
