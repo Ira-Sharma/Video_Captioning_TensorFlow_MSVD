@@ -21,7 +21,7 @@
 
 ## Introduction
 
-Training machines to caption videos has been a very interesting topic in recent times. This task is a combination of video data understanding, conversion of videos into image frames, feature extraction, and translation of visual representations into natural languages such as English. It has applications including recommendations in editing applications, usage in virtual assistants, for video indexing, for visually impaired people, in social media, and several other natural language processing applications.
+Training machines to caption videos has been a very interesting topic in recent times. This task is a combination of video data understanding, conversion of videos into image frames, feature extraction, and translation of visual representations into natural languages such as English. It has applications including recommendations in editing applications, usage in virtual assistants, for video indexing, for visually impaired people, in social media, and several other natural language processing applications. My previous work on image captioning (https://github.com/Ira-Sharma/Image_Captioning_Tensorflow_Flickr8K) used a CNN-LSTM-based model on the Flickr8K dataset.
 
 A working model of the video caption generator is built by using CNN (Convolutional Neural Network) and LSTM (Long Short-Term Memory) units. The MSVD dataset—a pre-captioned YouTube video repository from Microsoft—is used to train the model, consisting of approximately 2,000 videos with each video mapped to 10-15 English captions that describe the video. After training the model, predictions are made on the test data, and BLEU scores are calculated to evaluate the performance of the model.
 
