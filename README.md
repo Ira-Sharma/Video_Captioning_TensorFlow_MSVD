@@ -32,15 +32,14 @@ The Microsoft Research Video Description Corpus (MSVD) dataset consists of about
 ## Video Feature Extraction
 
 First, the videos in .avi format are converted into 80 image frames. The Convolutional Neural Network (CNN) method is used for feature extraction. The VGG16 model is a series of convolutional layers followed by a few dense (or fully connected) layers. The input layer to the last max pooling layer (labeled by 7 × 7 × 512) is regarded as the feature extraction part of the model, while the rest of the network is regarded as the classification part of the model. Each of the 80 frames is passed through a pre-trained VGG16, and 4,096 features are extracted from each frame. These features are stacked to form an (80, 4096) shaped array, where 80 is the number of frames and 4,096 is the number of extracted features from each frame.
-<p align="center"><img align="center" src="Images and gifs/vgg16.jpg" /></p>
+<p align="center"><img align="center" src="Images and gifs/vgg16.jpg" width="500" height="300" /></p>
 
 ## Caption Analysis
 
 Since the caption data was completely raw, the data had a lot of spelling errors and was in many different languages. First, only the English captions were extracted and were mapped to their unique VideoIDs. The extra captions whose videos were not available were removed, spelling errors were corrected, and the mapping data was split into train and test data containing the separate videos, features, and captions in different folders.
 
 After loading the training caption data, some analysis is performed on the captions, including the visualization of the frequency distribution of the words—the most common 50 words and the least common 50 words.
-
-<p align="center"><img align="center" src="Images and gifs/caption_analysis.png" /></p>
+<p align="center"><img align="center" src="Images and gifs/caption_analysis.png" width="500" height="300" /></p>
 
 ## Prepare Captions
 
@@ -69,9 +68,7 @@ The encoder takes the videos or a sequence of images as input and produces the e
 The decoder generates captions word by word using LSTMs, which are able to sequentially generate words. The input for the decoder is the encoded feature vectors from the encoder LSTM.
 
 It receives combined input from the encoder LSTM and decoder inputs (Input Layer 2). The decoder LSTM is connected to a Dense layer with Softmax activation function.
-
-<p align="center"><img align="center" src="<p align="center"><img align="center" src="Images and gifs/model_train.png" /></p>" /></p>
-
+<p align="center"><img align="center" src="Images and gifs/model_train.png" width="500" height="300" /></p>
 ## Training the Model
 
 ### Learning Rate
@@ -86,7 +83,7 @@ Cross Entropy Loss is the most popular and effective measurement for the perform
 ### Accuracy
 
 Finally, because it is a classification problem, the classification accuracy is collected and reported, defined via the metrics argument. 
-<p align="center"><img align="center" src="Images and gifs/accuracy.png" /></p>
+<p align="center"><img align="center" src="Images and gifs/accuracy.png" width="500" height="300" /></p>
 
 ## Model for Inference
 
