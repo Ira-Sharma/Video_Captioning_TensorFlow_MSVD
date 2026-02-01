@@ -40,7 +40,7 @@ Since the caption data was completely raw, the data had a lot of spelling errors
 
 After loading the training caption data, some analysis is performed on the captions, including the visualization of the frequency distribution of the words—the most common 50 words and the least common 50 words.
 
-<p align="center"><img align="center" src="Images and gifs/caption_analysis" /></p>
+<p align="center"><img align="center" src="Images and gifs/caption_analysis.png" /></p>
 
 ## Prepare Captions
 
@@ -70,7 +70,7 @@ The decoder generates captions word by word using LSTMs, which are able to seque
 
 It receives combined input from the encoder LSTM and decoder inputs (Input Layer 2). The decoder LSTM is connected to a Dense layer with Softmax activation function.
 
-<p align="center"><img align="center" src="<p align="center"><img align="center" src="Images and gifs/model_train" /></p>" /></p>
+<p align="center"><img align="center" src="<p align="center"><img align="center" src="Images and gifs/model_train.png" /></p>" /></p>
 
 ## Training the Model
 
@@ -81,12 +81,12 @@ Deep learning neural networks are trained using the stochastic gradient descent 
 ### Loss
 
 Cross Entropy Loss is the most popular and effective measurement for the performance of a classification model whose output is a probability value between 0 and 1. Categorical cross-entropy is applied in multiclass classification scenarios. In the formula, we multiply the actual outcome with the logarithm of the outcome produced by the model for more than two classes and then sum up. The categorical cross-entropy is appropriate in combination with an activation function such as softmax that can produce several probabilities for the number of classes that sum up to 1.
-<p align="center"><img align="center" src="Images and gifs/loss" /></p>
+<p align="center"><img align="center" src="Images and gifs/loss.png" /></p>
 
 ### Accuracy
 
 Finally, because it is a classification problem, the classification accuracy is collected and reported, defined via the metrics argument. 
-<p align="center"><img align="center" src="Images and gifs/accuracy" /></p>
+<p align="center"><img align="center" src="Images and gifs/accuracy.png" /></p>
 
 ## Model for Inference
 
